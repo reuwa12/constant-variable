@@ -1,13 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        int number = -1;
+        // "happy". "angry", "sad", etc.
+        String mood = "happy";
 
-        if (number > 0) {
-            System.out.println("number는 양수입니다.");
-        } else if (number < 0) {
-            System.out.println("number는 음수입니다.");
-        } else {
-            System.out.println("number는 0입니다.");
+        switch (mood) {
+            case "happy":
+                System.out.println("나는 행복하다. 왜냐하면 행복하기 때문이다.");
+                break;
+            case "angry":
+                System.out.println("나는 화가난다. 왜냐하면 화가나기 때문이다.");
+                break;
+            case "sad":
+                System.out.println("나는 슬프다. 왜냐하면 슬프기 때문이다.");
+                break;
         }
     }
 }
