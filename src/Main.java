@@ -1,16 +1,23 @@
 public class Main {
     public static void main(String[] args) {
-        // "happy". "angry", "sad", etc.
-        String mood = "happy";
+        int age = 20;
+        boolean hasID = true;
 
-       if(mood == "happy"){
-            System.out.println("나는 행복하다. 왜냐하면 행복하기 때문이다.");
-       }else if(mood == "angry"){
-           System.out.println("나는 화가난다. 왜냐하면 화가나기 때문이다.");
-       }else if(mood == "sad"){
-           System.out.println("<나는 슬프다. 왜냐하면 슬프기 때문이다.");
-       }else{
-           System.out.println("지금 내 기분을 단어로 표현할 수 없다.");
-       }
+        if (age >= 18 && hasID) {
+            System.out.println("접속가능.");
+        }
+
+        boolean isWeekend = false;
+        boolean isHoliday = true;
+
+        if (isWeekend || isHoliday) {
+            System.out.println("쉴수있습니다.");
+        }
+
+        boolean isRaining = true;
+        if (!isRaining) {
+            System.out.println("그냥 나가.");
+        }else{
+            System.out.println("우산 챙겨.");
     }
 }
